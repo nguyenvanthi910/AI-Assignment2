@@ -14,16 +14,66 @@ class Player:
         # (row1, col1): current position of selected amazon
         # (row2, col2): new position of selected amazon
         # (row3, col3): position of the square is shot
+    def nextMove(self, state):
+        result = [(0,3),(5,3),(8,6)] # example move in wikipedia
+        return result
+
+# ======================== Game Object =======================================
+WHITE = 'w'
+BLACK = 'b'
+ARROW = 'X'
+EMPTY = '.'
+class Queen:
+    def __init__(self,name, row, col, state):
+        self.name = name
+        self.row = row
+        self.col = col
+        self.state = state
+    def movetop(self, step=1):
+        if self.row - step > -1:
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row - step][self.col] = self.name
+            oldrow = self.row
+            self.row -= step
+            return [(oldrow, self.col),(self.row, self.col)]
+        return None
+
+    def movedown(self, step=1):
+        if self.row + step < 10:
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row + step][self.col] = self.name
+            oldrow = self.row
+            self.row += step
+            return [(oldrow, self.col),(self.row, self.col)]
+        return None
+
+
+    def canmove(self):
+        '''Kiểm tra quân hậu hiện tại có thể di chuyển được không'''
+        r = self.row
+        c = self.col
+        return (r + 1 < 10 and self.state[r+1][c] == EMPTY) or \
+               (r - 1 > -1 and self.state[r-1][c] == EMPTY) or \
+               (c + 1 < 10 and self.state[r][c+1] == EMPTY) or \
+               (c - 1 > -1 and self.state[r][c-1] == EMPTY) or \
+               (r + 1 < 10 and c + 1 < 10 and self.state[r+1][c+1] == EMPTY) or \
+               (r - 1 > -1 and c + 1 < 10 and self.state[r-1][c+1] == EMPTY) or \
+               (r - 1 > -1 and c - 1 > -1 and self.state[r-1][c-1] == EMPTY) or \
+               (r + 1 < 10 and c - 1 > -1 and self.state[r+1][c-1] == EMPTY)
+
 
 class GameNode:
-    def __init__(self,name,value=0,parent=None):
-        self.Name = name
-        self.value = value
-        self.parent = parent
-        self.children = []
+    def __init__(self, name, lsQueen):
+        self.name = name
+        self.queens = lsQueen #Danh sách tọa độ hâu [[r1,c1],[r2,c2],...]
+        self.moves = 0
 
-    def addChild(self,childNode):
-        self.children.append(childNode)
+    def getInstance(self,name, state):
+        node = GameNode(name, [])
+        for row in range(10):
+            for col in range(10):
+                if state[row][col] == name:
+                    node.queens.append([row,col])
 
 class GameTree:
     def __init__(self):
@@ -50,7 +100,7 @@ class GameTree:
         return
 
     def nextMove(self, state):
-        result = [(0,3),(5,3),(8,6)] # example move in wikipedia
+        result = [(0,3),(5,3),(8,6)] #   example move in wikipedia
         return result
 
     def Minimax(self, node):
@@ -65,6 +115,6 @@ class GameTree:
             if value > best_val:
                 best_val = value
                 best_state = state
-        print "AlphaBeta:  Utility Value of Root Node: = " + str(best_val)
-        print "AlphaBeta:  Best State is: " + best_state.Name
+        print("AlphaBeta:  Utility Value of Root Node: = " + str(best_val))
+        print("AlphaBeta:  Best State is: " + best_state.Name)
         return best_state
