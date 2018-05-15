@@ -29,6 +29,8 @@ class Queen:
         self.row = row
         self.col = col
         self.state = state
+
+                # ======== Move of Queen ======
     def movetop(self, step=1):
         if self.row - step > -1:
             self.state[self.row][self.col] = EMPTY
@@ -47,6 +49,68 @@ class Queen:
             return [(oldrow, self.col),(self.row, self.col)]
         return None
 
+    def moveleft(self,step=1):
+        if self.col - step > -1:
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row][self.col - step] = self.name
+            oldcol = self.col
+            self.col -= step
+            return [(self.row,oldcol),(self.row,self.col)]
+        return None
+
+    def moveright(self,step = 1):
+        if self.col + step <10:
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row][self.col + step] = self.name
+            oldcol = self.col
+            self.col += step
+            return [(self.row,oldcol),(self.row,self.col)]
+        return None
+
+    def movetopleft(self,step = 1):
+        if (self.row + step <10 && self.col - step > -1):
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row + step][self.col - step] = self.state
+            oldrow = self.row
+            oldcol = self.col
+            self.row += step
+            self.col -= step
+            return [(oldrow,oldcol),(self.row, self.col)]
+        return None
+
+    def movedownleft(self,step = 1):
+        if (self.row - step > -1 && self.col - step > -1):
+            self.state[self.row][self.col]=EMPTY
+            self.state[self.row - step][self.col - step] = self.state
+            oldrow = self.row
+            oldcol = self.col
+            self.row -= step
+            self.col -= step
+            return [(oldrow,oldcol),(self.row,self.col)]
+        return None
+
+    def movetopright(self, step = 1):
+        if(self.row + step < 10 && self.col + step <10):
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row + step][self.col + step] = self.name
+            oldrow = self.row
+            oldcol = self.col
+            self.row += step
+            self.col += step
+            return [(oldrow,oldcol),(self.row,self.col)]
+        return None
+
+    def movedownright(self,step = 1):
+        if(self.row - step > -1 && self.col + step < 10):
+            self.state[self.row][self.col] = EMPTY
+            self.state[self.row - step][self.col + step] = self.state
+            oldrow = self.row
+            oldcol = self.col
+            self.row -= step
+            self.col += step
+            return [(oldrow,oldcol),(self.row,self.col)]
+        return None
+
 
     def canmove(self):
         '''Kiểm tra quân hậu hiện tại có thể di chuyển được không'''
@@ -61,6 +125,30 @@ class Queen:
                (r - 1 > -1 and c - 1 > -1 and self.state[r-1][c-1] == EMPTY) or \
                (r + 1 < 10 and c - 1 > -1 and self.state[r+1][c-1] == EMPTY)
 
+class Shot:
+    def __init__(self,row,col,lsShot,state):
+        self.row = row
+        self.col = col
+        self.Shots = lsShot # Danh sách tọa độ shot [(r1,c1),(r2,c2)]
+        self.state = state
+
+    def addshot(self):
+        node = Shot([])
+        for row in range(10):
+            for col in range(10):
+                node.Shots.append([row,col])
+
+    def choseplace(self):
+        r = self.row
+        c = self.col
+        return (r + 1 < 10 and self.state[r+1][c] == EMPTY) or \
+               (r - 1 > -1 and self.state[r-1][c] == EMPTY) or \
+               (c + 1 < 10 and self.state[r][c+1] == EMPTY) or \
+               (c - 1 > -1 and self.state[r][c-1] == EMPTY) or \
+               (r + 1 < 10 and c + 1 < 10 and self.state[r+1][c+1] == EMPTY) or \
+               (r - 1 > -1 and c + 1 < 10 and self.state[r-1][c+1] == EMPTY) or \
+               (r - 1 > -1 and c - 1 > -1 and self.state[r-1][c-1] == EMPTY) or \
+               (r + 1 < 10 and c - 1 > -1 and self.state[r+1][c-1] == EMPTY)
 
 class GameNode:
     def __init__(self, name, lsQueen):
