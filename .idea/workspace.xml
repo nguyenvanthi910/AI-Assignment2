@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24c38da-3afa-421a-a939-ac48f3f09c74" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amazons.py" beforeDir="false" afterPath="$PROJECT_DIR$/amazons.py" afterDir="false" />
     </list>
@@ -13,27 +14,77 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AI_Assignment2$Unittests_for_QueenTest_QueenTest_test_available.coverage" NAME="Unittests for QueenTest.QueenTest.test_available Coverage Results" MODIFIED="1526743962852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/AI_Assignment2$Unittests_for_QueenTest_QueenTest.coverage" NAME="Unittests for QueenTest.QueenTest Coverage Results" MODIFIED="1526745562481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/AI_Assignment2$Unittests_for_QueenTest_QueenTest_test_movetop_movedown.coverage" NAME="Unittests for QueenTest.QueenTest.test_movetop_movedown Coverage Results" MODIFIED="1526744668679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/AI_Assignment2$Unittests_for_GameNodeTest_GameNodeTest.coverage" NAME="Unittests for GameNodeTest.GameNodeTest Coverage Results" MODIFIED="1526796326128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="amazons.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/amazons.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="143" column="64" lean-forward="true" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1043">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+          <file leaf-file-name="amazons.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/amazons.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3435">
+                  <caret line="282" selection-start-line="282" selection-end-line="282" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="261">
+                  <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#1#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+          <file leaf-file-name="amazons.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/amazons.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="796">
+                  <caret line="290" column="12" lean-forward="true" selection-start-line="290" selection-start-column="12" selection-end-line="290" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="QueenTest.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/QueenTest.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="406">
+                  <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +99,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/test/QueenTest.py" />
+        <option value="$PROJECT_DIR$/test/GameNodeTest.py" />
         <option value="$PROJECT_DIR$/amazons.py" />
       </list>
     </option>
@@ -68,31 +121,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="1289" />
-    <option name="height" value="741" />
+    <option name="x" value="-2" />
+    <option name="width" value="1602" />
+    <option name="height" value="1746" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AI-Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AI-Assignment2" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -101,8 +138,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -116,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests for GameNodeTest.GameNodeTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -158,6 +197,76 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="Unittests for GameNodeTest.GameNodeTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AI-Assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;GameNodeTest.GameNodeTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for QueenTest.QueenTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AI-Assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;QueenTest.QueenTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for QueenTest.QueenTest.test_available" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AI-Assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;QueenTest.QueenTest.test_available&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for QueenTest.QueenTest.test_movetop_movedown" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AI-Assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;QueenTest.QueenTest.test_movetop_movedown&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests for QueenTest.QueenTest.test_available" />
+      <item itemvalue="Python tests.Unittests for QueenTest.QueenTest.test_movetop_movedown" />
+      <item itemvalue="Python tests.Unittests for QueenTest.QueenTest" />
+      <item itemvalue="Python tests.Unittests for GameNodeTest.GameNodeTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for GameNodeTest.GameNodeTest" />
+        <item itemvalue="Python tests.Unittests for QueenTest.QueenTest" />
+        <item itemvalue="Python tests.Unittests for QueenTest.QueenTest.test_movetop_movedown" />
+        <item itemvalue="Python tests.Unittests for QueenTest.QueenTest.test_available" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -175,14 +284,50 @@
       <workItem from="1526288704882" duration="2380000" />
       <workItem from="1526293658282" duration="526000" />
       <workItem from="1526294334556" duration="6229000" />
+      <workItem from="1526738132433" duration="7484000" />
+      <workItem from="1526792147235" duration="6038000" />
+      <workItem from="1526829945445" duration="45000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 12h 55m 33s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 12h 57m 29s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 12h 58m 17s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 01m 16s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 03m 36s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 04m 12s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 04m 20s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 04m 26s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 05m 19s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_GameNodeTest_GameNodeTest - 2018.05.20 at 13h 05m 26s.xml">
+      <configuration name="Unittests for GameNodeTest.GameNodeTest" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10771000" />
+    <option name="totallyTimeSpent" value="24338000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="-2" y="0" width="3204" height="1746" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -191,12 +336,15 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32936507" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24537037" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.36398715" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -206,11 +354,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -221,6 +366,70 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8178">
+          <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/QueenTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="41" selection-start-line="41" selection-end-line="52" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1595">
+          <caret line="190" column="21" selection-start-line="190" selection-start-column="21" selection-end-line="190" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3451">
+          <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3016">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AI-Assignment2.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -420,17 +629,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/QueenTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/GameNodeTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1043">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="261">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amazons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="143" column="64" lean-forward="true" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
+        <state relative-caret-position="796">
+          <caret line="290" column="12" lean-forward="true" selection-start-line="290" selection-start-column="12" selection-end-line="290" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -463,6 +695,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 3.5 interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -474,7 +707,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>Android API 27 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
