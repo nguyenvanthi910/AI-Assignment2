@@ -155,49 +155,49 @@ class Queen:
         [topleft, top, topright, right, bottomright, bottom, bottomleft, left]
         """
         result = [0, 0, 0, 0, 0, 0, 0, 0]
-        for i in range(1, BOARDSIZE):  # TOPLEFT
-            if self.col < i or self.row < i: break
-            if self.state[self.row - i][self.col - i] == EMPTY:
+        for i in range(1, BOARDSIZE):  # TOPLEFT cột giảm hàng tăng
+            if self.col < i or self.row + i >= BOARDSIZE: break
+            if self.state[self.row + i][self.col - i] == EMPTY:
                 result[0] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # TOP
-            if self.row < i: break
-            if self.state[self.row - i][self.col] == EMPTY:
+        for i in range(1, BOARDSIZE):  # TOP hang tang
+            if self.row +i >= BOARDSIZE: break
+            if self.state[self.row + i][self.col] == EMPTY:
                 result[1] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # TOPRIGHT
-            if self.row < i or self.col + i >= BOARDSIZE: break
-            if self.state[self.row - i][self.col + i] == EMPTY:
+        for i in range(1, BOARDSIZE):  # TOPRIGHT hang va cot tang
+            if self.row +i >= BOARDSIZE or self.col + i >= BOARDSIZE: break
+            if self.state[self.row + i][self.col + i] == EMPTY:
                 result[2] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # RIGHT
+        for i in range(1, BOARDSIZE):  # RIGHT cot tang
             if self.col + i >= BOARDSIZE: break
             if self.state[self.row][self.col + i] == EMPTY:
                 result[3] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # BOTTOMRIGHT
-            if self.col + i >= BOARDSIZE or self.row + i >= BOARDSIZE: break
-            if self.state[self.row + i][self.col + i] == EMPTY:
+        for i in range(1, BOARDSIZE):  # BOTTOMRIGHT cot tang hang giam
+            if self.col + i >= BOARDSIZE or self.row < i: break
+            if self.state[self.row - i][self.col + i] == EMPTY:
                 result[4] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # BOTTOM
-            if self.row + i >= BOARDSIZE: break
-            if self.state[self.row + i][self.col] == EMPTY:
+        for i in range(1, BOARDSIZE):  # BOTTOM hang giam
+            if self.row < i : break
+            if self.state[self.row - i][self.col] == EMPTY:
                 result[5] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # BOTTOMLEFT
-            if self.row + i >= BOARDSIZE or self.col < i: break
-            if self.state[self.row + i][self.col - i] == EMPTY:
+        for i in range(1, BOARDSIZE):  # BOTTOMLEFT hang giam cot giam
+            if self.row < i or self.col < i: break
+            if self.state[self.row - i][self.col - i] == EMPTY:
                 result[6] += 1
             else:
                 break
-        for i in range(1, BOARDSIZE):  # LEFT
+        for i in range(1, BOARDSIZE):  # LEFT cot giam
             if self.col < i: break
             if self.state[self.row][self.col - i] == EMPTY:
                 result[7] += 1
@@ -210,25 +210,25 @@ class Queen:
         return (row, col)
 
     def shottopleft(self, step = 1):
-        return self.__shot__(self.row -  step, self.col - step)
+        return self.__shot__(self.row +  step, self.col - step)
 
     def shottop(self, step = 1):
-        return self.__shot__(self.row - step, self.col)
+        return self.__shot__(self.row + step, self.col)
 
     def shottopright(self, step = 1):
-        return self.__shot__(self.row - step, self.col + step)
+        return self.__shot__(self.row + step, self.col + step)
 
     def shotright(self, step = 1):
         return self.__shot__(self.row, self.col + step)
 
     def shotbottomright(self, step = 1):
-        return self.__shot__(self.row + step, self.col + step)
+        return self.__shot__(self.row - step, self.col + step)
 
     def shotbottom(self, step = 1):
-        return self.__shot__(self.row + step, self.col)
+        return self.__shot__(self.row - step, self.col)
 
     def shotbottomleft(self, step = 1):
-        return self.__shot__(self.row + step, self.col - step)
+        return self.__shot__(self.row - step, self.col - step)
 
     def shotleft(self, step = 1):
         return self.__shot__(self.row, self.col - step)
